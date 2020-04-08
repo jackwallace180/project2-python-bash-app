@@ -1,0 +1,19 @@
+  
+doctype html
+head
+  meta(charset='UTF-8')
+  title Hello
+form(action='/results' method='POST')
+  .container
+    h1
+      font(face='verdana' size='6' color='blue') Welcome 
+    p
+      font(face='verdana' size='6' color='grey') enter a number between 50 and 200
+    hr
+    label(for='number')
+      b
+        font(face='verdana' size='3' color='black') Enter your chosen number:  
+    input(type='number' placeholder='Enter here' name='number' min='50' max='200' required='')
+    hr
+    button(type='submit' value='submit') Submit
+  br
